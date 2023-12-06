@@ -1,24 +1,9 @@
-import React, { Component } from "react";
-import Navigation from "./components/Navigation";
-import Booklist from "./components/Booklist";
-import Toggle from "./components/Toggle";
-import AuthContextProvider from "./context/AuthContext";
-import BookContextProvider from "./context/BookContext";
+import React from 'react'
 
-export class App extends Component {
-  render() {
-    return (
-      <>
-        <AuthContextProvider>
-          <Navigation />
-          <BookContextProvider>
-            <Booklist />
-          </BookContextProvider>
-          <Toggle />
-        </AuthContextProvider>
-      </>
-    );
-  }
+const App = () => {
+  return (
+    <div>App</div>
+  )
 }
 
-export default App;
+export default App
